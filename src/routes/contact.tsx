@@ -1,11 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState, type FormEvent } from "react";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
-import { toast } from "sonner";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
+
 import { Reveal } from "@/components/Reveal";
 import { PageHero } from "@/components/site/Sections";
 import { COMPANY } from "@/lib/company";
@@ -57,37 +52,8 @@ export const Route = createFileRoute("/contact")({
   }),
 });
 
-interface Errors {
-  name?: string;
-  email?: string;
-  message?: string;
-}
-
 function Contact() {
-  const [errors, setErrors] = useState<Errors>({});
 
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const name = String(data.get("name") ?? "").trim();
-    const email = String(data.get("email") ?? "").trim();
-    const message = String(data.get("message") ?? "").trim();
-
-    const next: Errors = {};
-    if (name.length < 2) next.name = "Please enter your name.";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) next.email = "Enter a valid email address.";
-    if (message.length < 20) next.message = "Tell us a little more (20 characters minimum).";
-    setErrors(next);
-    if (Object.keys(next).length > 0) return;
-
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nCompany: ${String(data.get("company") ?? "")}\n\n${message}`,
-    );
-    window.location.href = `mailto:${COMPANY.email}?subject=${encodeURIComponent(
-      `Project enquiry — ${name}`,
-    )}&body=${body}`;
-    toast.success("Opening your email client with the enquiry ready to send.");
-  }
 
   return (
     <>
@@ -99,50 +65,11 @@ function Contact() {
       />
 
       <section>
-        <div className="mx-auto grid max-w-7xl gap-16 px-6 py-24 lg:grid-cols-[1fr_1fr] lg:px-10 lg:py-32">
-          <Reveal>
-            <h2 className="text-2xl font-extrabold tracking-tight">Send a brief</h2>
-            <form onSubmit={onSubmit} noValidate className="mt-8 space-y-6">
-              <div>
-                <Label htmlFor="name">Name</Label>
-                <Input id="name" name="name" autoComplete="name" className="mt-2 h-11" />
-                {errors.name && <p className="mt-2 text-xs text-destructive">{errors.name}</p>}
-              </div>
-              <div>
-                <Label htmlFor="email">Work email</Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  className="mt-2 h-11"
-                />
-                {errors.email && <p className="mt-2 text-xs text-destructive">{errors.email}</p>}
-              </div>
-              <div>
-                <Label htmlFor="company">Company (optional)</Label>
-                <Input
-                  id="company"
-                  name="company"
-                  autoComplete="organization"
-                  className="mt-2 h-11"
-                />
-              </div>
-              <div>
-                <Label htmlFor="message">What are you trying to build?</Label>
-                <Textarea id="message" name="message" rows={6} className="mt-2" />
-                {errors.message && <p className="mt-2 text-xs text-destructive">{errors.message}</p>}
-              </div>
-              <Button type="submit" variant="hero" size="pill" className="w-full sm:w-auto">
-                Send enquiry
-              </Button>
-            </form>
-          </Reveal>
-
-          <Reveal delay={120} className="space-y-6">
-            <div className="rounded-2xl border border-border bg-card p-8 shadow-soft">
+        <div className="mx-auto grid max-w-5xl gap-8 px-6 py-24 lg:px-10 lg:py-32">
+          <Reveal className="space-y-6">
+            <div className="rounded-2xl border border-border bg-card p-8 shadow-soft sm:p-10">
               <h2 className="label-caps">Office</h2>
-              <ul className="mt-6 space-y-5 text-sm text-muted-foreground">
+              <ul className="mt-8 grid gap-6 text-sm text-muted-foreground sm:grid-cols-2">
                 <li className="flex gap-3">
                   <MapPin className="mt-0.5 size-4 shrink-0 text-primary" />
                   <span>{COMPANY.address}</span>
@@ -175,12 +102,13 @@ function Contact() {
                 title="FortuneX Technologies office location on Google Maps"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="h-[360px] w-full border-0"
+                className="h-[420px] w-full border-0"
               />
             </div>
           </Reveal>
         </div>
       </section>
+
     </>
   );
 }

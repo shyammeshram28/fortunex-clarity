@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/Reveal";
-import { HeroComposition } from "@/components/graphics/HeroComposition";
+
 import { CtaBand, Commitments } from "@/components/site/Sections";
 import { SERVICES } from "@/lib/services";
 import { FAQS } from "@/lib/company";
@@ -111,49 +111,66 @@ function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden">
+      <section className="relative isolate overflow-hidden">
         <div
           className="precision-grid grid-fade pointer-events-none absolute inset-0"
           aria-hidden="true"
         />
-        <div className="relative mx-auto grid max-w-7xl gap-16 px-6 pb-24 pt-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:px-10 lg:pb-32 lg:pt-28">
-          <div>
-            <Reveal>
-              <p className="label-caps">Pune, India · Est. 2026</p>
-            </Reveal>
-            <Reveal delay={100}>
-              <h1 className="mt-8 text-6xl font-extrabold tracking-tight text-foreground sm:text-7xl lg:text-[5.5rem] lg:leading-[0.95]">
-                Clarity,
-                <br />
-                <span className="text-primary">engineered.</span>
-              </h1>
-            </Reveal>
-            <Reveal delay={180}>
-              <p className="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground">
-                FortuneX Technologies builds the dashboards, automation and secure applications that
-                turn scattered data into decisions you can defend.
-              </p>
-            </Reveal>
-            <Reveal delay={260}>
-              <div className="mt-10 flex flex-wrap gap-3">
-                <Button asChild variant="hero" size="pill" className="group">
-                  <Link to="/contact">
-                    Start a project
-                    <ArrowRight className="transition-transform duration-500 group-hover:translate-x-1" />
-                  </Link>
-                </Button>
-                <Button asChild variant="brandOutline" size="pill">
-                  <Link to="/services">Explore services</Link>
-                </Button>
-              </div>
-            </Reveal>
-          </div>
-          <Reveal delay={200} className="relative">
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-secondary/70 to-transparent blur-3xl" />
-            <HeroComposition className="relative mx-auto w-full max-w-lg text-foreground" />
+        <div className="hero-aura pointer-events-none absolute inset-0" aria-hidden="true" />
+        <div className="relative mx-auto flex max-w-5xl flex-col items-center px-6 pb-28 pt-24 text-center lg:pb-40 lg:pt-32">
+          <Reveal>
+            <span className="inline-flex items-center gap-2.5 rounded-full border border-border bg-background/70 px-4 py-1.5 text-[0.6875rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground backdrop-blur">
+              <span className="size-1.5 rounded-full bg-primary" />
+              Enterprise technology · Pune, India
+            </span>
+          </Reveal>
+
+          <Reveal delay={100}>
+            <h1 className="mt-10 text-5xl font-extrabold leading-[1.02] tracking-tight text-foreground sm:text-7xl lg:text-[6.25rem]">
+              Engineering the
+              <br />
+              <span className="hero-gradient-text">intelligent enterprise.</span>
+            </h1>
+          </Reveal>
+
+          <Reveal delay={180}>
+            <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
+              FortuneX Technologies designs, builds and secures world-class software — AI systems,
+              cloud platforms, automation and cybersecurity — for organisations that measure
+              progress in outcomes, not slideware.
+            </p>
+          </Reveal>
+
+          <Reveal delay={260}>
+            <div className="mt-12 flex flex-wrap items-center justify-center gap-3">
+              <Button asChild variant="hero" size="pill" className="group h-12 px-7 text-[0.9375rem]">
+                <Link to="/contact">
+                  Start a project
+                  <ArrowRight className="transition-transform duration-500 group-hover:translate-x-1" />
+                </Link>
+              </Button>
+              <Button asChild variant="brandOutline" size="pill" className="h-12 px-7 text-[0.9375rem]">
+                <Link to="/services">Explore capabilities</Link>
+              </Button>
+            </div>
+          </Reveal>
+
+          <Reveal delay={340}>
+            <ul className="mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground/80">
+              {[
+                "Software Development",
+                "AI Solutions",
+                "Cybersecurity",
+                "Cloud Services",
+                "Automation",
+              ].map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
           </Reveal>
         </div>
       </section>
+
 
       {/* Pillars */}
       <section className="border-y border-border">
