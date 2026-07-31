@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/Reveal";
-import { HeroComposition } from "@/components/graphics/HeroComposition";
+
 import { CtaBand, Commitments } from "@/components/site/Sections";
 import { SERVICES } from "@/lib/services";
 import { FAQS } from "@/lib/company";
