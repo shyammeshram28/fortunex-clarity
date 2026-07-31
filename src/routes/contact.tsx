@@ -1,11 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState, type FormEvent } from "react";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
-import { toast } from "sonner";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
+
 import { Reveal } from "@/components/Reveal";
 import { PageHero } from "@/components/site/Sections";
 import { COMPANY } from "@/lib/company";
@@ -57,37 +52,8 @@ export const Route = createFileRoute("/contact")({
   }),
 });
 
-interface Errors {
-  name?: string;
-  email?: string;
-  message?: string;
-}
-
 function Contact() {
-  const [errors, setErrors] = useState<Errors>({});
 
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const name = String(data.get("name") ?? "").trim();
-    const email = String(data.get("email") ?? "").trim();
-    const message = String(data.get("message") ?? "").trim();
-
-    const next: Errors = {};
-    if (name.length < 2) next.name = "Please enter your name.";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) next.email = "Enter a valid email address.";
-    if (message.length < 20) next.message = "Tell us a little more (20 characters minimum).";
-    setErrors(next);
-    if (Object.keys(next).length > 0) return;
-
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nCompany: ${String(data.get("company") ?? "")}\n\n${message}`,
-    );
-    window.location.href = `mailto:${COMPANY.email}?subject=${encodeURIComponent(
-      `Project enquiry — ${name}`,
-    )}&body=${body}`;
-    toast.success("Opening your email client with the enquiry ready to send.");
-  }
 
   return (
     <>
