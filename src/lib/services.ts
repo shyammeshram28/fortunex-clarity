@@ -186,13 +186,3 @@ export const SERVICES: Service[] = [
     stack: ["React", "Tailwind CSS", "TypeScript", "Vite", "Node.js"],
   },
 ];
-
-/** Order used on the home page capabilities grid. */
-export const HOME_SERVICE_ORDER = [
-  "reporting",
-  "staffing",
-  "cybersecurity",
-  "ai-automation",
-  "maintenance",
-  "web-development",
-];

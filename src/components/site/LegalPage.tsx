@@ -1,6 +1,5 @@
 import { Reveal } from "@/components/Reveal";
-import { PageHero } from "@/components/site/Sections";
-import { CtaBand } from "@/components/site/Sections";
+import { CtaBand, PageHero } from "@/components/site/Sections";
 
 export interface LegalSection {
   heading: string;
