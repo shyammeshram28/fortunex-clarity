@@ -81,35 +81,36 @@ const PILLARS = [
 const WHY = [
   {
     n: "01",
-    title: "Strong industry expertise in Data, AI, and Software Solutions",
-    body: "Deep specialization in Data Analytics, BI, Artificial Intelligence, Cybersecurity, and Software Engineering.",
+    title: "Specialists, not generalists",
+    body: "Focused depth in data and analytics, artificial intelligence, application security and web engineering — the four disciplines we practise every day.",
   },
   {
     n: "02",
-    title: "End-to-end service delivery (Strategy → Development → Support)",
-    body: "Comprehensive service coverage from initial strategy & discovery to full stack development and long-term support.",
+    title: "End-to-end ownership",
+    body: "Strategy, architecture, development and long-term support handled by one accountable team, so nothing gets lost between vendors.",
   },
   {
     n: "03",
-    title: "Skilled and pre-vetted technical talent pool",
-    body: "Skilled, project-tested data analysts, engineers, and developers ready for rapid deployment.",
+    title: "Talent you can deploy fast",
+    body: "Project-tested analysts, engineers and developers ready to join your team in days, with skills verified against real scenarios.",
   },
   {
     n: "04",
-    title: "Strong focus on quality, security, and performance",
-    body: "OWASP Top 10 compliance, least-privilege security access, and performance-optimized clean code architectures.",
+    title: "Quality, security and speed",
+    body: "OWASP-aligned testing, least-privilege access and performance budgets built into delivery — not bolted on before launch.",
   },
   {
     n: "05",
-    title: "Scalable and cost-effective solutions",
-    body: "Transparent pricing without agency overhead — scale your team up or down on your timeline.",
+    title: "Transparent, scalable pricing",
+    body: "Fixed scopes and clear rates without agency overhead. Scale the team up or down as your roadmap changes.",
   },
   {
     n: "06",
-    title: "Client-centric and flexible engagement models",
-    body: "Flexible engagement models (hourly, monthly, or project-based) tailored to your business needs.",
+    title: "A partnership that adapts",
+    body: "Hourly, monthly or project-based engagements shaped around how your business actually works.",
   },
 ];
+
 
 function Index() {
   return (
