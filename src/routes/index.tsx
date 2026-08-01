@@ -210,16 +210,16 @@ function Index() {
             </Reveal>
           </div>
 
-          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {SERVICES.map((s, i) => (
               <Reveal key={s.slug} delay={i * 70}>
                 <Link
                   to="/services"
                   hash={s.slug}
-                  className="surface-hover group flex h-full flex-col rounded-2xl border border-border bg-card p-8 shadow-soft"
+                  className="surface-hover group flex h-full flex-col rounded-2xl border border-border bg-card p-7 shadow-soft sm:p-8"
                 >
                   <s.icon className="size-6 text-primary" strokeWidth={1.5} />
-                  <h3 className="mt-8 text-lg font-bold tracking-tight text-foreground">{s.name}</h3>
+                  <h3 className="mt-7 text-lg font-bold tracking-tight text-foreground">{s.name}</h3>
                   <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
                     {s.short}
                   </p>
@@ -243,12 +243,12 @@ function Index() {
               Built for teams that need results, not decks.
             </h2>
           </Reveal>
-          <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {WHY.map((w, i) => (
               <Reveal
                 key={w.n}
                 delay={i * 70}
-                className="surface-hover rounded-2xl border border-border bg-background p-8"
+                className="surface-hover rounded-2xl border border-border bg-background p-7 sm:p-8"
               >
                 <p className="label-caps text-primary">{w.n}</p>
                 <h3 className="mt-6 text-base font-bold leading-snug tracking-tight text-foreground">
