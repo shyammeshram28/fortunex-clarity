@@ -17,18 +17,22 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "FortuneX Technologies — Clarity, engineered." },
+      { title: "FortuneX Technologies — Software, AI & Cybersecurity Engineering" },
       {
         name: "description",
         content:
-          "Dashboards, staffing, cybersecurity, AI automation and web engineering from a senior-led team in Pune, India. Fixed scopes, measured delivery.",
+          "FortuneX Technologies builds custom web applications, AI and workflow automation, analytics dashboards and application security testing. Senior-led delivery from Pune, India.",
       },
-      { property: "og:title", content: "FortuneX Technologies — Clarity, engineered." },
+      {
+        property: "og:title",
+        content: "FortuneX Technologies — Building the Future of Digital Innovation",
+      },
       {
         property: "og:description",
         content:
-          "Dashboards, staffing, cybersecurity, AI automation and web engineering from a senior-led team in Pune, India.",
+          "Custom software, AI automation, analytics and cybersecurity engineered by a senior team. Fixed scopes, measurable outcomes.",
       },
+
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
       { name: "twitter:card", content: "summary_large_image" },
