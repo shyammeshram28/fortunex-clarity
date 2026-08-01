@@ -72,7 +72,7 @@ export function PageHero({
   return (
     <section className="relative overflow-hidden border-b border-border">
       <div className="precision-grid grid-fade pointer-events-none absolute inset-0" aria-hidden="true" />
-      <div className="relative mx-auto max-w-7xl px-6 pb-20 pt-20 lg:px-10 lg:pb-28 lg:pt-28">
+      <div className="relative mx-auto max-w-7xl px-5 pb-14 pt-14 sm:px-6 lg:px-10 lg:pb-24 lg:pt-24">
         <Reveal>
           <nav aria-label="Breadcrumb" className="label-caps">
             {breadcrumb}

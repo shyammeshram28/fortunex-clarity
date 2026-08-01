@@ -61,7 +61,7 @@ function Services() {
       />
 
       <section className="border-b border-border">
-        <div className="mx-auto max-w-7xl px-6 py-14 lg:px-10">
+        <div className="mx-auto max-w-7xl px-5 py-12 sm:px-6 lg:px-10">
           <div className="flex flex-wrap gap-3">
             {SERVICES.map((s, i) => (
               <Reveal key={s.slug} delay={i * 60}>

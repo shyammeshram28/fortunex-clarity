@@ -182,7 +182,7 @@ function Index() {
       <section className="border-y border-border">
         <div className="mx-auto grid max-w-7xl sm:grid-cols-3 sm:divide-x sm:divide-border">
           {PILLARS.map((p, i) => (
-            <Reveal key={p.title} delay={i * 80} className="border-b border-border px-6 py-12 last:border-b-0 sm:border-b-0 lg:px-10">
+            <Reveal key={p.title} delay={i * 80} className="border-b border-border px-5 py-10 sm:px-6 sm:py-12 last:border-b-0 sm:border-b-0 lg:px-10">
               <h2 className="text-sm font-bold uppercase tracking-[0.16em] text-foreground">
                 {p.title}
               </h2>
