@@ -84,7 +84,7 @@ function Services() {
           id={s.slug}
           className={index % 2 === 1 ? "border-b border-border bg-secondary/40" : "border-b border-border"}
         >
-          <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
+          <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-10 lg:py-24">
             <div className="grid gap-14 lg:grid-cols-[0.85fr_1.15fr]">
               <div>
                 <Reveal>

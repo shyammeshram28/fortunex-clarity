@@ -117,32 +117,32 @@ function Index() {
           aria-hidden="true"
         />
         <div className="hero-aura pointer-events-none absolute inset-0" aria-hidden="true" />
-        <div className="relative mx-auto flex max-w-5xl flex-col items-center px-6 pb-28 pt-24 text-center lg:pb-40 lg:pt-32">
+        <div className="relative mx-auto flex max-w-5xl flex-col items-center px-5 pb-20 pt-16 text-center sm:px-6 sm:pb-28 sm:pt-24 lg:pb-36 lg:pt-32">
           <Reveal>
-            <span className="inline-flex items-center gap-2.5 rounded-full border border-border bg-background/70 px-4 py-1.5 text-[0.6875rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground backdrop-blur">
+            <span className="inline-flex items-center gap-2.5 rounded-full border border-border bg-background/70 px-4 py-1.5 text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground backdrop-blur sm:text-[0.6875rem] sm:tracking-[0.2em]">
               <span className="size-1.5 rounded-full bg-primary" />
               Enterprise technology · Pune, India
             </span>
           </Reveal>
 
           <Reveal delay={100}>
-            <h1 className="mt-10 text-5xl font-extrabold leading-[1.02] tracking-tight text-foreground sm:text-7xl lg:text-[6.25rem]">
-              Engineering the
-              <br />
-              <span className="hero-gradient-text">intelligent enterprise.</span>
+            <h1 className="mt-8 text-[2.5rem] font-extrabold leading-[1.05] tracking-tight text-foreground sm:mt-10 sm:text-6xl lg:text-[5.5rem] lg:leading-[1.02]">
+              Building the Future of
+              <br className="hidden sm:block" />{" "}
+              <span className="hero-gradient-text">Digital Innovation.</span>
             </h1>
           </Reveal>
 
           <Reveal delay={180}>
-            <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-              FortuneX Technologies designs, builds and secures world-class software — AI systems,
-              cloud platforms, automation and cybersecurity — for organisations that measure
-              progress in outcomes, not slideware.
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:mt-8 sm:text-xl">
+              FortuneX Technologies designs, builds and secures the software enterprises depend on —
+              custom applications, AI and automation, analytics and cybersecurity. Engineered by a
+              senior team, delivered against outcomes you can measure.
             </p>
           </Reveal>
 
           <Reveal delay={260}>
-            <div className="mt-12 flex flex-wrap items-center justify-center gap-3">
+            <div className="mt-10 flex w-full flex-col items-stretch justify-center gap-3 sm:mt-12 sm:w-auto sm:flex-row sm:items-center">
               <Button asChild variant="hero" size="pill" className="group h-12 px-7 text-[0.9375rem]">
                 <Link to="/contact">
                   Start a project
@@ -156,19 +156,20 @@ function Index() {
           </Reveal>
 
           <Reveal delay={340}>
-            <ul className="mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground/80">
+            <ul className="mt-12 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground/80 sm:mt-16 sm:gap-x-8 sm:text-[0.6875rem] sm:tracking-[0.18em]">
               {[
-                "Software Development",
-                "AI Solutions",
+                "Web Applications",
+                "AI & Automation",
                 "Cybersecurity",
-                "Cloud Services",
-                "Automation",
+                "Data & Reporting",
+                "Support",
               ].map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
           </Reveal>
         </div>
+
       </section>
 
 
@@ -188,11 +189,11 @@ function Index() {
 
       {/* Capabilities */}
       <section id="capabilities">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
+        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-10 lg:py-24">
           <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-end">
             <Reveal>
               <p className="label-caps text-primary">Capabilities</p>
-              <h2 className="mt-5 text-4xl font-extrabold tracking-tight sm:text-5xl">
+              <h2 className="mt-5 text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
                 Six practices. One accountable team.
               </h2>
             </Reveal>
@@ -230,10 +231,10 @@ function Index() {
 
       {/* Why FortuneX */}
       <section className="border-t border-border bg-secondary/40">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
+        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-10 lg:py-24">
           <Reveal>
             <p className="label-caps text-primary">Why FortuneX</p>
-            <h2 className="mt-5 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">
+            <h2 className="mt-5 max-w-3xl text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
               Built for teams that need results, not decks.
             </h2>
           </Reveal>
@@ -259,11 +260,11 @@ function Index() {
 
       {/* FAQ */}
       <section className="border-t border-border">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
+        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-10 lg:py-24">
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
             <Reveal>
               <p className="label-caps text-primary">FAQ</p>
-              <h2 className="mt-5 text-4xl font-extrabold tracking-tight sm:text-5xl">
+              <h2 className="mt-5 text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
                 Questions, answered plainly.
               </h2>
             </Reveal>

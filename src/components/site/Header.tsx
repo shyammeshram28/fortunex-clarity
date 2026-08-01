@@ -34,12 +34,19 @@ export function Header() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 backdrop-blur-xl transition-all duration-500",
-        scrolled ? "border-b border-border bg-background/80" : "bg-background/60",
+        "sticky top-0 z-50 transition-all duration-500",
+        open
+          ? "bg-background"
+          : cn("backdrop-blur-xl", scrolled ? "border-b border-border bg-background/80" : "bg-background/60"),
       )}
     >
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
-        <Link to="/" className="group" aria-label="FortuneX Technologies home">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-5 sm:px-6 md:h-20 lg:px-10">
+        <Link
+          to="/"
+          className="group min-w-0 shrink"
+          aria-label="FortuneX Technologies home"
+          onClick={() => setOpen(false)}
+        >
           <Logo />
         </Link>
 
@@ -67,33 +74,47 @@ export function Header() {
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border text-foreground md:hidden"
+          className="inline-flex size-11 shrink-0 items-center justify-center rounded-full border border-border text-foreground transition-colors duration-300 active:bg-secondary md:hidden"
         >
           {open ? <X className="size-5" /> : <Menu className="size-5" />}
         </button>
       </div>
 
-      {open && (
-        <div className="fixed inset-x-0 top-20 bottom-0 z-40 border-t border-border bg-background px-6 pt-8 md:hidden">
-          <nav className="flex flex-col" aria-label="Mobile">
-            {nav.map((item) => (
-              <Link
-                key={item.to}
-                to={item.to}
-                onClick={() => setOpen(false)}
-                className="border-b border-border py-5 text-2xl font-semibold tracking-tight text-foreground"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
-          <Button asChild variant="hero" size="pill" className="mt-8 w-full">
-            <Link to="/contact" onClick={() => setOpen(false)}>
-              Start a project
+      {/* Mobile menu */}
+      <div
+        id="mobile-menu"
+        aria-hidden={!open}
+        className={cn(
+          "fixed inset-x-0 bottom-0 top-16 z-40 flex flex-col overflow-y-auto border-t border-border px-5 pb-10 pt-6 transition-[opacity,transform] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] md:hidden",
+          open
+            ? "pointer-events-auto translate-y-0 opacity-100"
+            : "pointer-events-none -translate-y-2 opacity-0",
+        )}
+        style={{ backgroundColor: "var(--background)" }}
+      >
+        <nav className="flex flex-col" aria-label="Mobile">
+          {nav.map((item, i) => (
+            <Link
+              key={item.to}
+              to={item.to}
+              activeOptions={{ exact: item.to === "/" }}
+              onClick={() => setOpen(false)}
+              style={{ transitionDelay: open ? `${80 + i * 45}ms` : "0ms" }}
+              className={cn(
+                "border-b border-border py-5 text-2xl font-semibold tracking-tight text-foreground transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] data-[status=active]:text-primary",
+                open ? "translate-y-0 opacity-100" : "translate-y-3 opacity-0",
+              )}
+            >
+              {item.label}
             </Link>
-          </Button>
-        </div>
-      )}
+          ))}
+        </nav>
+        <Button asChild variant="hero" size="pill" className="mt-8 h-12 w-full">
+          <Link to="/contact" onClick={() => setOpen(false)}>
+            Start a project
+          </Link>
+        </Button>
+      </div>
     </header>
   );
 }
