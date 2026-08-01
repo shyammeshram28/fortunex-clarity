@@ -17,18 +17,22 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "FortuneX Technologies — Clarity, engineered." },
+      { title: "FortuneX Technologies — Software, AI & Cybersecurity Engineering" },
       {
         name: "description",
         content:
-          "Dashboards, staffing, cybersecurity, AI automation and web engineering from a senior-led team in Pune, India. Fixed scopes, measured delivery.",
+          "FortuneX Technologies builds custom web applications, AI and workflow automation, analytics dashboards and application security testing. Senior-led delivery from Pune, India.",
       },
-      { property: "og:title", content: "FortuneX Technologies — Clarity, engineered." },
+      {
+        property: "og:title",
+        content: "FortuneX Technologies — Building the Future of Digital Innovation",
+      },
       {
         property: "og:description",
         content:
-          "Dashboards, staffing, cybersecurity, AI automation and web engineering from a senior-led team in Pune, India.",
+          "Custom software, AI automation, analytics and cybersecurity engineered by a senior team. Fixed scopes, measurable outcomes.",
       },
+
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -77,35 +81,36 @@ const PILLARS = [
 const WHY = [
   {
     n: "01",
-    title: "Strong industry expertise in Data, AI, and Software Solutions",
-    body: "Deep specialization in Data Analytics, BI, Artificial Intelligence, Cybersecurity, and Software Engineering.",
+    title: "Specialists, not generalists",
+    body: "Focused depth in data and analytics, artificial intelligence, application security and web engineering — the four disciplines we practise every day.",
   },
   {
     n: "02",
-    title: "End-to-end service delivery (Strategy → Development → Support)",
-    body: "Comprehensive service coverage from initial strategy & discovery to full stack development and long-term support.",
+    title: "End-to-end ownership",
+    body: "Strategy, architecture, development and long-term support handled by one accountable team, so nothing gets lost between vendors.",
   },
   {
     n: "03",
-    title: "Skilled and pre-vetted technical talent pool",
-    body: "Skilled, project-tested data analysts, engineers, and developers ready for rapid deployment.",
+    title: "Talent you can deploy fast",
+    body: "Project-tested analysts, engineers and developers ready to join your team in days, with skills verified against real scenarios.",
   },
   {
     n: "04",
-    title: "Strong focus on quality, security, and performance",
-    body: "OWASP Top 10 compliance, least-privilege security access, and performance-optimized clean code architectures.",
+    title: "Quality, security and speed",
+    body: "OWASP-aligned testing, least-privilege access and performance budgets built into delivery — not bolted on before launch.",
   },
   {
     n: "05",
-    title: "Scalable and cost-effective solutions",
-    body: "Transparent pricing without agency overhead — scale your team up or down on your timeline.",
+    title: "Transparent, scalable pricing",
+    body: "Fixed scopes and clear rates without agency overhead. Scale the team up or down as your roadmap changes.",
   },
   {
     n: "06",
-    title: "Client-centric and flexible engagement models",
-    body: "Flexible engagement models (hourly, monthly, or project-based) tailored to your business needs.",
+    title: "A partnership that adapts",
+    body: "Hourly, monthly or project-based engagements shaped around how your business actually works.",
   },
 ];
+
 
 function Index() {
   return (
@@ -117,32 +122,32 @@ function Index() {
           aria-hidden="true"
         />
         <div className="hero-aura pointer-events-none absolute inset-0" aria-hidden="true" />
-        <div className="relative mx-auto flex max-w-5xl flex-col items-center px-6 pb-28 pt-24 text-center lg:pb-40 lg:pt-32">
+        <div className="relative mx-auto flex max-w-5xl flex-col items-center px-5 pb-20 pt-16 text-center sm:px-6 sm:pb-28 sm:pt-24 lg:pb-36 lg:pt-32">
           <Reveal>
-            <span className="inline-flex items-center gap-2.5 rounded-full border border-border bg-background/70 px-4 py-1.5 text-[0.6875rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground backdrop-blur">
+            <span className="inline-flex items-center gap-2.5 rounded-full border border-border bg-background/70 px-4 py-1.5 text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground backdrop-blur sm:text-[0.6875rem] sm:tracking-[0.2em]">
               <span className="size-1.5 rounded-full bg-primary" />
               Enterprise technology · Pune, India
             </span>
           </Reveal>
 
           <Reveal delay={100}>
-            <h1 className="mt-10 text-5xl font-extrabold leading-[1.02] tracking-tight text-foreground sm:text-7xl lg:text-[6.25rem]">
-              Engineering the
-              <br />
-              <span className="hero-gradient-text">intelligent enterprise.</span>
+            <h1 className="mt-8 text-[2.5rem] font-extrabold leading-[1.05] tracking-tight text-foreground sm:mt-10 sm:text-6xl lg:text-[5.5rem] lg:leading-[1.02]">
+              Building the Future of
+              <br className="hidden sm:block" />{" "}
+              <span className="hero-gradient-text">Digital Innovation.</span>
             </h1>
           </Reveal>
 
           <Reveal delay={180}>
-            <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl">
-              FortuneX Technologies designs, builds and secures world-class software — AI systems,
-              cloud platforms, automation and cybersecurity — for organisations that measure
-              progress in outcomes, not slideware.
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:mt-8 sm:text-xl">
+              FortuneX Technologies designs, builds and secures the software enterprises depend on —
+              custom applications, AI and automation, analytics and cybersecurity. Engineered by a
+              senior team, delivered against outcomes you can measure.
             </p>
           </Reveal>
 
           <Reveal delay={260}>
-            <div className="mt-12 flex flex-wrap items-center justify-center gap-3">
+            <div className="mt-10 flex w-full flex-col items-stretch justify-center gap-3 sm:mt-12 sm:w-auto sm:flex-row sm:items-center">
               <Button asChild variant="hero" size="pill" className="group h-12 px-7 text-[0.9375rem]">
                 <Link to="/contact">
                   Start a project
@@ -156,19 +161,20 @@ function Index() {
           </Reveal>
 
           <Reveal delay={340}>
-            <ul className="mt-16 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-[0.6875rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground/80">
+            <ul className="mt-12 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground/80 sm:mt-16 sm:gap-x-8 sm:text-[0.6875rem] sm:tracking-[0.18em]">
               {[
-                "Software Development",
-                "AI Solutions",
+                "Web Applications",
+                "AI & Automation",
                 "Cybersecurity",
-                "Cloud Services",
-                "Automation",
+                "Data & Reporting",
+                "Support",
               ].map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
           </Reveal>
         </div>
+
       </section>
 
 
@@ -176,7 +182,7 @@ function Index() {
       <section className="border-y border-border">
         <div className="mx-auto grid max-w-7xl sm:grid-cols-3 sm:divide-x sm:divide-border">
           {PILLARS.map((p, i) => (
-            <Reveal key={p.title} delay={i * 80} className="border-b border-border px-6 py-12 last:border-b-0 sm:border-b-0 lg:px-10">
+            <Reveal key={p.title} delay={i * 80} className="border-b border-border px-5 py-10 sm:px-6 sm:py-12 last:border-b-0 sm:border-b-0 lg:px-10">
               <h2 className="text-sm font-bold uppercase tracking-[0.16em] text-foreground">
                 {p.title}
               </h2>
@@ -188,11 +194,11 @@ function Index() {
 
       {/* Capabilities */}
       <section id="capabilities">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
+        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-10 lg:py-24">
           <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-end">
             <Reveal>
               <p className="label-caps text-primary">Capabilities</p>
-              <h2 className="mt-5 text-4xl font-extrabold tracking-tight sm:text-5xl">
+              <h2 className="mt-5 text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
                 Six practices. One accountable team.
               </h2>
             </Reveal>
@@ -204,16 +210,16 @@ function Index() {
             </Reveal>
           </div>
 
-          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {SERVICES.map((s, i) => (
               <Reveal key={s.slug} delay={i * 70}>
                 <Link
                   to="/services"
                   hash={s.slug}
-                  className="surface-hover group flex h-full flex-col rounded-2xl border border-border bg-card p-8 shadow-soft"
+                  className="surface-hover group flex h-full flex-col rounded-2xl border border-border bg-card p-7 shadow-soft sm:p-8"
                 >
                   <s.icon className="size-6 text-primary" strokeWidth={1.5} />
-                  <h3 className="mt-8 text-lg font-bold tracking-tight text-foreground">{s.name}</h3>
+                  <h3 className="mt-7 text-lg font-bold tracking-tight text-foreground">{s.name}</h3>
                   <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
                     {s.short}
                   </p>
@@ -230,19 +236,19 @@ function Index() {
 
       {/* Why FortuneX */}
       <section className="border-t border-border bg-secondary/40">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
+        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-10 lg:py-24">
           <Reveal>
             <p className="label-caps text-primary">Why FortuneX</p>
-            <h2 className="mt-5 max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">
+            <h2 className="mt-5 max-w-3xl text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
               Built for teams that need results, not decks.
             </h2>
           </Reveal>
-          <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {WHY.map((w, i) => (
               <Reveal
                 key={w.n}
                 delay={i * 70}
-                className="surface-hover rounded-2xl border border-border bg-background p-8"
+                className="surface-hover rounded-2xl border border-border bg-background p-7 sm:p-8"
               >
                 <p className="label-caps text-primary">{w.n}</p>
                 <h3 className="mt-6 text-base font-bold leading-snug tracking-tight text-foreground">
@@ -259,11 +265,11 @@ function Index() {
 
       {/* FAQ */}
       <section className="border-t border-border">
-        <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
+        <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-10 lg:py-24">
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
             <Reveal>
               <p className="label-caps text-primary">FAQ</p>
-              <h2 className="mt-5 text-4xl font-extrabold tracking-tight sm:text-5xl">
+              <h2 className="mt-5 text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
                 Questions, answered plainly.
               </h2>
             </Reveal>

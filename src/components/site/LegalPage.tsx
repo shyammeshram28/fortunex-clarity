@@ -23,7 +23,7 @@ export function LegalPage({
     <>
       <PageHero breadcrumb={breadcrumb} eyebrow="Legal" title={title} description={description} />
       <section>
-        <div className="mx-auto max-w-3xl px-6 py-20 lg:px-10 lg:py-28">
+        <div className="mx-auto max-w-3xl px-5 py-14 sm:px-6 lg:px-10 lg:py-24">
           <p className="label-caps">Last updated {updated}</p>
           <div className="mt-12 space-y-12">
             {sections.map((s, i) => (
