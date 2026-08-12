@@ -17,11 +17,11 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "FortuneX Technologies — Software, AI & Cybersecurity Engineering" },
+      { title: "FortuneX Technologies — Software, AI & Security" },
       {
         name: "description",
         content:
-          "FortuneX Technologies builds custom web applications, AI and workflow automation, analytics dashboards and application security testing. Senior-led delivery from Pune, India.",
+          "Custom web applications, AI and workflow automation, analytics dashboards and application security testing. Senior-led engineering from Pune, India.",
       },
       {
         property: "og:title",
@@ -224,7 +224,7 @@ function Index() {
                     {s.short}
                   </p>
                   <span className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-foreground">
-                    Learn more
+                    Explore {s.name}
                     <ArrowRight className="size-4 transition-transform duration-500 group-hover:translate-x-1" />
                   </span>
                 </Link>
