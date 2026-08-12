@@ -12,7 +12,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "FortuneX Technologies is a Pune-based engineering team building data, AI, cybersecurity and web solutions. Senior-led delivery, fixed scopes, measurable outcomes.",
+          "A Pune-based engineering team building data, AI, cybersecurity and web solutions with fixed scopes and measurable outcomes.",
       },
       { property: "og:title", content: "About — FortuneX Technologies" },
       {

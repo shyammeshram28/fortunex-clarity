@@ -12,7 +12,7 @@ export const Route = createFileRoute("/careers")({
       {
         name: "description",
         content:
-          "Join a senior-led engineering team working on data, AI, cybersecurity and web platforms. Send a short introduction and your CV — every message is read personally.",
+          "Join a senior-led engineering team working on data, AI, cybersecurity and web platforms. See the roles and skills we hire for.",
       },
       { property: "og:title", content: "Careers — FortuneX Technologies" },
       {
