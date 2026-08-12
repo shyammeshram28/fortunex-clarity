@@ -17,11 +17,11 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "FortuneX Technologies — Software, AI & Cybersecurity Engineering" },
+      { title: "FortuneX Technologies — Software, AI & Security" },
       {
         name: "description",
         content:
-          "FortuneX Technologies builds custom web applications, AI and workflow automation, analytics dashboards and application security testing. Senior-led delivery from Pune, India.",
+          "Custom web applications, AI and workflow automation, analytics dashboards and application security testing. Senior-led engineering from Pune, India.",
       },
       {
         property: "og:title",
