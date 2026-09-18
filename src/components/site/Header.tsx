@@ -65,7 +65,7 @@ export function Header() {
 
         <div className="hidden md:block">
           <Button asChild variant="hero" size="default" className="h-10 px-5">
-            <Link to="/contact">Start a project</Link>
+            <Link to="/contact">Talk to us</Link>
           </Button>
         </div>
 
@@ -111,7 +111,7 @@ export function Header() {
         </nav>
         <Button asChild variant="hero" size="pill" className="mt-8 h-12 w-full">
           <Link to="/contact" onClick={() => setOpen(false)}>
-            Start a project
+            Talk to us
           </Link>
         </Button>
       </div>
