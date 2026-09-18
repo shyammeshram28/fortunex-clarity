@@ -13,12 +13,12 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Talk to the engineers who will build your project. Call +91 72761 91361 or email info@fortunextechnologies.com. Every enquiry answered within 24 hours.",
+          "Contact FortuneX Technologies about reporting, AI automation, web development, staffing, training, or internships in Pune.",
       },
       { property: "og:title", content: "Contact — FortuneX Technologies" },
       {
         property: "og:description",
-        content: "A short scoping call, a fixed scope, and a first deliverable you can judge.",
+        content: "Call or email our team to discuss the FortuneX service you need.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/contact" },
@@ -57,8 +57,8 @@ function Contact() {
       <PageHero
         breadcrumb="Home / Contact"
         eyebrow="Contact"
-        title="Let's scope your next build."
-        description="Call or email us with a short description of the problem. You'll speak directly to an engineer, get a clear scope, and know exactly what the first deliverable looks like. Every enquiry is answered within 24 hours."
+        title="Let&apos;s talk about what you need."
+        description="Call or email us about reporting, AI automation, web development, staffing, training, or internships. We reply within 24 hours."
       />
 
       <section>
@@ -74,7 +74,7 @@ function Contact() {
                 {COMPANY.phone}
               </a>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                Best for quick scoping conversations and urgent support requests.
+                 Call to discuss a service, role, training program, or internship.
               </p>
             </Reveal>
 
@@ -91,7 +91,7 @@ function Contact() {
                 {COMPANY.email}
               </a>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                Send requirements, documents or an existing brief — we reply with next steps.
+                 Send your requirements or questions and we will explain the next step.
               </p>
             </Reveal>
           </div>

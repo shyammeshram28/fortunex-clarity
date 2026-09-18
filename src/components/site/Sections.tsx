@@ -10,18 +10,18 @@ export function CtaBand() {
       <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-10 lg:py-24">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-end">
           <Reveal>
-            <p className="label-caps">Start a conversation</p>
+            <p className="label-caps">Talk to our team</p>
             <h2 className="mt-5 max-w-2xl text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
-              Tell us what you need. We&apos;ll tell you exactly how we&apos;d build it.
+              Have a technology goal? Let&apos;s discuss the next step.
             </h2>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-              A short scoping call, a fixed scope, and a first deliverable you can judge.
+              Share your needs with us. We&apos;ll explain the best way forward in clear terms.
             </p>
           </Reveal>
           <Reveal delay={120} className="flex flex-wrap gap-3 lg:justify-end">
             <Button asChild variant="hero" size="pill" className="group">
               <Link to="/contact">
-                Contact us
+                Talk to us
                 <ArrowRight className="transition-transform duration-500 group-hover:translate-x-1" />
               </Link>
             </Button>

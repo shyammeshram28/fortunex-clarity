@@ -25,8 +25,8 @@ export function Footer() {
           <div>
             <Logo />
             <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Reporting, staffing, security, AI automation and web engineering — delivered by a
-              senior team in Pune, India.
+              Reporting, AI automation, web development, staffing, and practical technology training
+              from Pune, India.
             </p>
             <a
               href={COMPANY.linkedin}

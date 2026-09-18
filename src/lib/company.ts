@@ -17,7 +17,7 @@ export const COMPANY = {
 
 export const COMMITMENTS = [
   { value: "24h", label: "First response to every enquiry" },
-  { value: "6", label: "Service practices under one roof" },
+  { value: "5", label: "Focused services under one roof" },
   { value: "100%", label: "Senior-led, documented delivery" },
   { value: "0", label: "Long-term lock-in contracts" },
 ] as const;
@@ -36,27 +36,27 @@ export const INDUSTRIES = [
 export const FAQS = [
   {
     q: "What services does FortuneX Technologies provide?",
-    a: "We offer BI & Reporting Services, Data & Engineering Staffing, Web Application Penetration Testing (Cybersecurity), AI & Workflow Automation (including Custom AI Solutions), Web Application Development, and Website Maintenance & Application Support.",
+    a: "We provide Reporting Services, AI Automation, Web Application Development, Staffing Services, and Training and Internship programs.",
   },
   {
-    q: "Do you offer custom AI and software solutions?",
-    a: "Yes. We develop tailor-made AI models, ML/DL workflows, predictive analytics systems, NLP models, AI chatbots, as well as full-stack scalable web applications tailored to your business goals.",
+    q: "Do you build custom AI tools and web applications?",
+    a: "Yes. We build AI automations, chatbots, business workflows, websites, and web applications based on your goals.",
   },
   {
     q: "What industries do you work with?",
-    a: "We serve Banking & Financial Services, Healthcare & Life Sciences, Retail & E-commerce, Manufacturing & Supply Chain, SaaS & Technology, Logistics & Transportation, Education, and Professional Services.",
+    a: "We work with businesses in finance, healthcare, retail, manufacturing, technology, logistics, education, and professional services.",
   },
   {
     q: "Do you provide staffing or dedicated developers?",
-    a: "Yes, we provide pre-vetted, project-tested Data Analysts, Data Engineers, and Developers on flexible contract, part-time, full-time, or dedicated pod engagement models.",
+    a: "Yes. We provide data analysts, data engineers, and software developers for contract, part-time, full-time, and project-based work.",
   },
   {
     q: "What is your project delivery process?",
-    a: "We operate in clear stages: Scoping & Discovery → Architecture & Design → Development & Testing → Handover & Post-deployment Monitoring.",
+    a: "We first understand your needs, then plan, build, test, and hand over the work in clear stages.",
   },
   {
-    q: "Do you offer post-deployment support?",
-    a: "Yes! We offer ongoing Website Maintenance & Application Support retainers, including performance monitoring, security patching, bug fixes, and SLA-backed troubleshooting.",
+    q: "Do you provide training and internships?",
+    a: "Yes. We offer practical training and internship opportunities in reporting, AI automation, web development, and related technology skills.",
   },
   {
     q: "How can I contact FortuneX Technologies?",

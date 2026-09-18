@@ -81,11 +81,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "FortuneX Technologies — Data, AI & Secure Software" },
+      { title: "FortuneX Technologies — Reporting, AI & Web" },
       {
         name: "description",
         content:
-          "FortuneX Technologies builds dashboards, automation and secure applications for teams that need results. Pune, India.",
+          "FortuneX Technologies provides reporting, AI automation, web development, staffing, training, and internships in Pune, India.",
       },
       { name: "author", content: "FortuneX Technologies" },
       { property: "og:site_name", content: "FortuneX Technologies" },

@@ -9,17 +9,22 @@ export const Route = createFileRoute("/services")({
   component: Services,
   head: () => ({
     meta: [
-      { title: "Services — Reporting, AI, Security & Web | FortuneX" },
+      { title: "Reporting, AI, Web, Staffing & Training | FortuneX" },
       {
         name: "description",
         content:
-          "Six practices: BI reporting, data staffing, penetration testing, AI & workflow automation, web application development, and maintenance support.",
+          "Explore reporting services, AI automation, web application development, staffing services, training, and internships from FortuneX.",
+      },
+      {
+        name: "keywords",
+        content:
+          "reporting services, AI automation, web application development, staffing services, training and internship, Pune",
       },
       { property: "og:title", content: "Services — FortuneX Technologies" },
       {
         property: "og:description",
         content:
-          "BI reporting, data staffing, penetration testing, AI automation, web development and application support.",
+          "Five clear services: reporting, AI automation, web development, staffing, and technology training with internships.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/services" },
@@ -56,8 +61,8 @@ function Services() {
       <PageHero
         breadcrumb="Home / Services"
         eyebrow="Services"
-        title="Six practices. One accountable team."
-        description="Each service is designed to compound the value of the last — from the first dashboard to the people who maintain it."
+        title="Five services. One focused team."
+        description="Clear technology services for businesses, professionals, and students. Choose one service or combine them as your needs grow."
       />
 
       <section className="border-b border-border">
@@ -115,7 +120,7 @@ function Services() {
                   </div>
                   <Button asChild variant="hero" size="pill" className="group mt-10">
                     <Link to="/contact">
-                      Start a project
+                      Talk to us
                       <ArrowRight className="transition-transform duration-500 group-hover:translate-x-1" />
                     </Link>
                   </Button>
