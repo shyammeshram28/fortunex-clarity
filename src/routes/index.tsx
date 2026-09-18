@@ -17,11 +17,16 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "FortuneX Technologies — Software, AI & Security" },
+      { title: "FortuneX Technologies — Reporting, AI & Web" },
       {
         name: "description",
         content:
-          "Custom web applications, AI and workflow automation, analytics dashboards and application security testing. Senior-led engineering from Pune, India.",
+          "Reporting services, AI automation, web application development, staffing, training, and internships from FortuneX Technologies in Pune.",
+      },
+      {
+        name: "keywords",
+        content:
+          "reporting services, AI automation, web application development, staffing services, technology training, internships, Pune",
       },
       {
         property: "og:title",
@@ -30,7 +35,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Custom software, AI automation, analytics and cybersecurity engineered by a senior team. Fixed scopes, measurable outcomes.",
+          "Clear reporting, AI automation, web development, staffing, and practical technology training from one focused team.",
       },
 
       { property: "og:type", content: "website" },
@@ -70,44 +75,44 @@ export const Route = createFileRoute("/")({
 });
 
 const PILLARS = [
-  { title: "Senior-led", body: "The people who scope your work are the people who build it." },
+  { title: "Expert-led", body: "You work with people who understand both the goal and the technology." },
   {
-    title: "Fixed scopes",
-    body: "Transparent pricing, defined deliverables, no open-ended retainers.",
+    title: "Clear plans",
+    body: "You know what we will deliver, when it will be ready, and what it will cost.",
   },
-  { title: "Measured", body: "Every engagement ships something you can evaluate in weeks." },
+  { title: "Useful results", body: "Every service is built around a practical outcome you can review." },
 ];
 
 const WHY = [
   {
     n: "01",
-    title: "Specialists, not generalists",
-    body: "Focused depth in data and analytics, artificial intelligence, application security and web engineering — the four disciplines we practise every day.",
+    title: "Five focused services",
+    body: "Our work stays focused on reporting, AI automation, web applications, staffing, and practical training.",
   },
   {
     n: "02",
-    title: "End-to-end ownership",
-    body: "Strategy, architecture, development and long-term support handled by one accountable team, so nothing gets lost between vendors.",
+    title: "One responsible team",
+    body: "We plan, build, review, and hand over the work with clear ownership at every step.",
   },
   {
     n: "03",
     title: "Talent you can deploy fast",
-    body: "Project-tested analysts, engineers and developers ready to join your team in days, with skills verified against real scenarios.",
+    body: "We help you find analysts, engineers, and developers whose skills match your needs.",
   },
   {
     n: "04",
-    title: "Quality, security and speed",
-    body: "OWASP-aligned testing, least-privilege access and performance budgets built into delivery — not bolted on before launch.",
+    title: "Quality from the start",
+    body: "We review the details throughout the work, not only at the end.",
   },
   {
     n: "05",
-    title: "Transparent, scalable pricing",
-    body: "Fixed scopes and clear rates without agency overhead. Scale the team up or down as your roadmap changes.",
+    title: "Clear pricing",
+    body: "We explain the scope and cost before work starts, with no hidden steps.",
   },
   {
     n: "06",
-    title: "A partnership that adapts",
-    body: "Hourly, monthly or project-based engagements shaped around how your business actually works.",
+    title: "Flexible ways to work",
+    body: "Choose project-based, part-time, or full-time support based on what you need.",
   },
 ];
 
@@ -126,7 +131,7 @@ function Index() {
           <Reveal>
             <span className="inline-flex items-center gap-2.5 rounded-full border border-border bg-background/70 px-4 py-1.5 text-[0.625rem] font-semibold uppercase tracking-[0.18em] text-muted-foreground backdrop-blur sm:text-[0.6875rem] sm:tracking-[0.2em]">
               <span className="size-1.5 rounded-full bg-primary" />
-              Enterprise technology · Pune, India
+               Technology services · Pune, India
             </span>
           </Reveal>
 
@@ -140,9 +145,8 @@ function Index() {
 
           <Reveal delay={180}>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:mt-8 sm:text-xl">
-              FortuneX Technologies designs, builds and secures the software enterprises depend on —
-              custom applications, AI and automation, analytics and cybersecurity. Engineered by a
-              senior team, delivered against outcomes you can measure.
+              We help businesses with clear reporting, useful AI automation, modern web applications,
+              skilled technology staff, and practical training programs.
             </p>
           </Reveal>
 
@@ -150,12 +154,12 @@ function Index() {
             <div className="mt-10 flex w-full flex-col items-stretch justify-center gap-3 sm:mt-12 sm:w-auto sm:flex-row sm:items-center">
               <Button asChild variant="hero" size="pill" className="group h-12 px-7 text-[0.9375rem]">
                 <Link to="/contact">
-                  Start a project
+                  Talk to us
                   <ArrowRight className="transition-transform duration-500 group-hover:translate-x-1" />
                 </Link>
               </Button>
               <Button asChild variant="brandOutline" size="pill" className="h-12 px-7 text-[0.9375rem]">
-                <Link to="/services">Explore capabilities</Link>
+                <Link to="/services">View services</Link>
               </Button>
             </div>
           </Reveal>
@@ -163,11 +167,11 @@ function Index() {
           <Reveal delay={340}>
             <ul className="mt-12 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-[0.625rem] font-semibold uppercase tracking-[0.16em] text-muted-foreground/80 sm:mt-16 sm:gap-x-8 sm:text-[0.6875rem] sm:tracking-[0.18em]">
               {[
+                "Reporting",
+                "AI Automation",
                 "Web Applications",
-                "AI & Automation",
-                "Cybersecurity",
-                "Data & Reporting",
-                "Support",
+                "Staffing",
+                "Training & Internship",
               ].map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -197,15 +201,14 @@ function Index() {
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-10 lg:py-24">
           <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-end">
             <Reveal>
-              <p className="label-caps text-primary">Capabilities</p>
+              <p className="label-caps text-primary">Our services</p>
               <h2 className="mt-5 text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-                Six practices. One accountable team.
+                Five services. One focused team.
               </h2>
             </Reveal>
             <Reveal delay={120}>
               <p className="text-base leading-relaxed text-muted-foreground lg:pb-2">
-                Each service is designed to compound the value of the last — from the first dashboard
-                to the people who maintain it.
+                Choose the service you need today, or combine them as your business grows.
               </p>
             </Reveal>
           </div>
@@ -240,7 +243,7 @@ function Index() {
           <Reveal>
             <p className="label-caps text-primary">Why FortuneX</p>
             <h2 className="mt-5 max-w-3xl text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-              Built for teams that need results, not decks.
+               Clear work. Useful results.
             </h2>
           </Reveal>
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">

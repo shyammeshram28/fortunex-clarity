@@ -12,7 +12,7 @@ export const Route = createFileRoute("/careers")({
       {
         name: "description",
         content:
-          "Join a senior-led engineering team working on data, AI, cybersecurity and web platforms. See the roles and skills we hire for.",
+          "Explore careers, training, and internships in reporting, AI automation, web development, and technology staffing at FortuneX.",
       },
       { property: "og:title", content: "Careers — FortuneX Technologies" },
       {
@@ -42,28 +42,28 @@ export const Route = createFileRoute("/careers")({
 
 const AREAS = [
   {
-    title: "Data & Analytics",
-    body: "Analysts and analytics engineers who can model messy data and turn it into dashboards people actually use.",
+    title: "Reporting and Analytics",
+    body: "Analysts who can prepare data and create clear reports and dashboards.",
   },
   {
-    title: "AI & Automation",
-    body: "Engineers building practical machine learning, NLP and workflow automation that removes real manual effort.",
+    title: "AI Automation",
+    body: "People who can use AI and connected tools to simplify business work.",
   },
   {
-    title: "Cybersecurity",
-    body: "Application security testers who think like attackers and write remediation guidance developers can act on.",
+    title: "Training and Internship",
+    body: "Students and professionals who want practical experience, guidance, and project work.",
   },
   {
     title: "Web Engineering",
-    body: "Full-stack developers who care about performance, accessibility and clean, maintainable architecture.",
+    body: "Developers who build fast, simple, and reliable websites and web applications.",
   },
 ];
 
 const VALUES = [
-  "Ownership from scoping to handover — no anonymous ticket queues",
-  "Direct access to senior engineers and honest technical feedback",
-  "Time set aside for learning, certification and deep work",
-  "Remote-friendly, outcome-based working with clear expectations",
+  "Clear ownership from planning to delivery",
+  "Direct feedback and support from experienced team members",
+  "Time to learn and improve practical skills",
+  "Clear expectations and respect for focused work",
 ];
 
 function Careers() {
@@ -72,8 +72,8 @@ function Careers() {
       <PageHero
         breadcrumb="Home / Careers"
         eyebrow="Careers"
-        title="Do the work you'd put your name on."
-        description="We hire engineers who want ownership of real problems — and give them the context, the tools and the trust to solve them properly."
+        title="Build skills. Do meaningful work."
+        description="Join a team that values practical thinking, clear communication, steady learning, and quality work."
       />
 
       <section>
@@ -81,7 +81,7 @@ function Careers() {
           <Reveal>
             <p className="label-caps text-primary">Where we hire</p>
             <h2 className="mt-5 max-w-2xl text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-              Four practices, one standard of craft.
+               Four areas where you can grow.
             </h2>
           </Reveal>
           <div className="mt-12 grid gap-5 sm:grid-cols-2">
@@ -127,8 +127,8 @@ function Careers() {
               Introduce yourself
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Send a short introduction and your CV by email, or call us directly. Every message is
-              read personally, and we reply either way.
+               Email us a short introduction and your CV, or call us to ask about current roles,
+               training, and internships.
             </p>
           </Reveal>
 

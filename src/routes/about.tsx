@@ -8,17 +8,17 @@ export const Route = createFileRoute("/about")({
   component: About,
   head: () => ({
     meta: [
-      { title: "About FortuneX Technologies — Engineering-Led Delivery" },
+      { title: "About FortuneX Technologies — Clear Technology Work" },
       {
         name: "description",
         content:
-          "A Pune-based engineering team building data, AI, cybersecurity and web solutions with fixed scopes and measurable outcomes.",
+          "Meet the Pune-based team behind our reporting, AI automation, web development, staffing, training, and internship services.",
       },
       { property: "og:title", content: "About — FortuneX Technologies" },
       {
         property: "og:description",
         content:
-          "An engineering-led technology partner. Small senior teams, fixed scopes, measurable outcomes.",
+          "A focused technology partner with clear plans, direct communication, and useful results.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/about" },
@@ -45,46 +45,46 @@ const PRINCIPLES = [
   {
     icon: Compass,
     title: "Clarity first",
-    body: "We define the decision before we build the system. Scope, success metric and owner — agreed in writing before a single line of code.",
+    body: "We first agree on the goal, the work, and what success should look like.",
   },
   {
     icon: Gauge,
-    title: "Momentum over motion",
-    body: "Short delivery cycles with visible output. You see working software in weeks, and every milestone is something you can evaluate.",
+    title: "Progress you can see",
+    body: "We work in clear stages and show useful progress throughout the project.",
   },
   {
     icon: ShieldCheck,
-    title: "Secure by default",
-    body: "Least-privilege access, reviewed code and tested applications on every engagement — regardless of budget or timeline.",
+    title: "Quality at every step",
+    body: "We review our work, test key details, and communicate clearly from start to finish.",
   },
 ];
 
 const STORY = [
-  "FortuneX Technologies exists for a simple reason: too much technology work is measured in documents rather than results. We wanted to build the opposite — a team where the engineers who scope your problem are the ones who solve it.",
-  "We work across data and reporting, artificial intelligence, cybersecurity, web engineering and long-term application support. Different disciplines, one standard: understand the business decision first, then engineer the shortest reliable path to it.",
-  "Every engagement is senior-led and deliberately small. No handoff layers, no inflated timelines, no lock-in. You get a clear scope, direct access to the people building it, and software you can judge on its own merits.",
+  "FortuneX Technologies was built around a simple idea: technology should solve real problems and be easy to understand.",
+  "We focus on five areas: reporting, AI automation, web application development, staffing, and training with internships. This focus helps us give each client and learner clear, practical support.",
+  "We listen first, explain our plan in plain language, and stay responsible for the work. Our aim is to deliver quality you can see and value you can use.",
 ];
 
 const APPROACH = [
   {
     step: "01",
     title: "Understand",
-    body: "We map the decision, the data and the constraints before proposing anything.",
+    body: "We listen to your needs and ask the right questions.",
   },
   {
     step: "02",
     title: "Design",
-    body: "A fixed scope with defined deliverables, architecture and success criteria.",
+    body: "We set a clear plan, timeline, and expected result.",
   },
   {
     step: "03",
     title: "Build",
-    body: "Short cycles, reviewed code, security and performance considered from day one.",
+    body: "We complete the work in clear stages and review it with you.",
   },
   {
     step: "04",
-    title: "Sustain",
-    body: "Documented handover, monitoring and support so the solution keeps earning its place.",
+    title: "Deliver",
+    body: "We test the result, explain it, and provide a clear handover.",
   },
 ];
 
@@ -94,8 +94,8 @@ function About() {
       <PageHero
         breadcrumb="Home / About"
         eyebrow="About us"
-        title="Engineering, without the theatre."
-        description="FortuneX Technologies is a Pune-based engineering team. You work directly with the people writing the code — and you judge us on what we ship."
+        title="Technology work, made clear."
+        description="FortuneX Technologies is a Pune-based team focused on useful technology, clear communication, and work you can trust."
       />
 
       <section>
@@ -104,7 +104,7 @@ function About() {
             <Reveal>
               <p className="label-caps text-primary">Our story</p>
               <h2 className="mt-5 text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-                Built around the outcome, not the process.
+                 Built around real needs and useful results.
               </h2>
             </Reveal>
             <div className="mt-8 space-y-5">
@@ -142,7 +142,7 @@ function About() {
           <Reveal>
             <p className="label-caps text-primary">How we work</p>
             <h2 className="mt-5 max-w-2xl text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-              Three principles we don&apos;t compromise on.
+               Three principles that guide our work.
             </h2>
           </Reveal>
           <div className="mt-12 grid gap-5 md:grid-cols-3">
@@ -168,11 +168,10 @@ function About() {
           <Reveal>
             <p className="label-caps text-primary">Industries</p>
             <h2 className="mt-5 max-w-2xl text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-              Sector context that shortens the ramp-up.
+               We take time to understand your industry.
             </h2>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-              We bring working knowledge of the data models, compliance expectations and reporting
-              rhythms these sectors run on.
+               We learn how your business works so the service fits your goals and daily needs.
             </p>
           </Reveal>
           <div className="mt-10 flex flex-wrap gap-2.5">
